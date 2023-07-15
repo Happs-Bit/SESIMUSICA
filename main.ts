@@ -1,0 +1,10 @@
+input.onButtonPressed(Button.A, function () {
+    music.play(music.stringPlayable("C5 A B G A F E E ", 300), music.PlaybackMode.LoopingInBackground)
+    basic.pause(3500)
+    music.play(music.tonePlayable(784, music.beat(BeatFraction.Breve)), music.PlaybackMode.LoopingInBackground)
+    basic.pause(2000)
+    music.play(music.tonePlayable(175, music.beat(BeatFraction.Breve)), music.PlaybackMode.LoopingInBackground)
+    basic.pause(1300)
+    music.play(music.stringPlayable("G E B A F D C5 E ", 350), music.PlaybackMode.InBackground)
+})
+basic.showString("aperte A")
